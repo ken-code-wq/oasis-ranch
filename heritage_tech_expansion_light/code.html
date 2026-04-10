@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verdant Legacy | Precision Agriculture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#002113",
+                        "on-primary-fixed": "#002113",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#00422b",
+                        "on-tertiary-fixed": "#410005",
+                        "primary": "#006c49",
+                        "surface-dim": "#d3daef",
+                        "on-error": "#ffffff",
+                        "on-background": "#141b2b",
+                        "on-secondary-container": "#3c6c54",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#dce2f7",
+                        "primary-container": "#10b981",
+                        "secondary-container": "#b7ebce",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#a43a3a",
+                        "surface-container-low": "#f1f3ff",
+                        "secondary": "#376850",
+                        "inverse-primary": "#4edea3",
+                        "primary-fixed": "#6ffbbe",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface": "#f9f9ff",
+                        "surface-container": "#e9edff",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "tertiary-fixed": "#ffdad7",
+                        "inverse-on-surface": "#edf0ff",
+                        "inverse-surface": "#293040",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "on-surface": "#141b2b",
+                        "surface-tint": "#006c49",
+                        "on-surface-variant": "#3c4a42",
+                        "secondary-fixed": "#baeed1",
+                        "on-secondary-fixed-variant": "#1e4f3a",
+                        "surface-container-highest": "#dce2f7",
+                        "secondary-fixed-dim": "#9ed2b5",
+                        "outline": "#6c7a71",
+                        "outline-variant": "#bbcabf",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#711419",
+                        "primary-fixed-dim": "#4edea3",
+                        "tertiary-container": "#fc7c78",
+                        "surface-container-high": "#e1e8fd",
+                        "surface-bright": "#f9f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-[0px_20px_40px_rgba(0,0,0,0.04)]">
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+<div class="font-headline font-bold tracking-tighter text-emerald-900 text-xl">Verdant Legacy</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline tracking-tight font-semibold text-white border-b-2 border-white pb-1" href="#">Heritage</a>
+<a class="font-headline tracking-tight font-semibold text-slate-500 hover:text-emerald-600 transition-opacity duration-300" href="#">Crops</a>
+<a class="font-headline tracking-tight font-semibold text-slate-500 hover:text-emerald-600 transition-opacity duration-300" href="#">Tech</a>
+<a class="font-headline tracking-tight font-semibold text-slate-500 hover:text-emerald-600 transition-opacity duration-300" href="#">Analytics</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-slate-600 hover:opacity-80 transition-opacity duration-300">account_circle</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 max-w-7xl mx-auto px-8 space-y-24">
+<!-- Heritage Section: Asymmetric Bento -->
+<section class="space-y-12" id="heritage">
+<div class="max-w-2xl">
+<h2 class="text-on-surface-variant font-label text-xs uppercase tracking-[0.2em] mb-4">The Lineage</h2>
+<h1 class="font-headline text-5xl font-extrabold tracking-tight text-on-surface leading-[1.1]">Four Generations of Soil Stewardship</h1>
+</div>
+<div class="grid grid-cols-12 gap-6 items-start">
+<!-- Large Story Card -->
+<div class="col-span-12 lg:col-span-7 bg-surface-container-lowest p-10 rounded-[1.5rem] shadow-[0px_20px_40px_rgba(20,27,43,0.04)] relative overflow-hidden group">
+<div class="relative z-10 space-y-6">
+<span class="text-primary font-headline font-bold text-6xl opacity-20">1924</span>
+<h3 class="font-headline text-2xl font-bold text-on-surface">The Foundation</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Our journey began with Arthur Vance, who viewed the soil not as a commodity, but as a living legacy. Today, we translate his organic wisdom into algorithmic precision.</p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl font-medium shadow-[0px_4px_12px_rgba(0,108,73,0.2)] hover:opacity-90 transition-opacity">Read the Archives</button>
+</div>
+</div>
+<img class="absolute -right-20 -bottom-20 w-80 h-80 object-cover rounded-full mix-blend-multiply opacity-10 group-hover:scale-110 transition-transform duration-700" data-alt="vintage sepia toned photograph of a weathered farmer standing in a vast green wheat field at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiDbMhMqbCJEWiG_4smu_xB1_df7Am3SmsAdmFYJa74D1u17oO_W-a-i4HUV28K7IJtnwJ-Xc4PtjbGPXtWCdgiuzZVx42enHwDpwNPdTxx7SsfteN1z0zEZxp67OLbgmsnJEB4TnlM4hqOIE7_QNmEY3KqhOE9ZmfAOaILaFL-a6fp_cMYYQAz0c2Ypv2eao40is90qOKZwx1qHQRGN7XdZzr2SP7gKhHunK_g21AER6CjYgxJ-3X6UHLaYhLu8nCVZwRzX0vNkqd"/>
+</div>
+<!-- Portrait Visual Card -->
+<div class="col-span-12 lg:col-span-5 h-full min-h-[400px] rounded-[1.5rem] overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close up of sun-hardened hands cradling rich dark fertile soil with a single green sprout emerging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH7-TaWRTYzTZM3UoejmjoLIFBl-nQgpuSEiHUMRgHDsw1uae8SOEjRHl5J-66nKVwV74Efy_Iv70r_WY67QWjxojnzT50R7Qa2PkTHzI4BF648zk3VsaL8AV_BpqqqjW79iLfpJb0TWyf1KlN2w6ugfDmnP8i5DNdPQOkX4iIa_wAhLeb0mKRgPMm4MKmrir0zMJrc6HvB-X997lkLic3Wi27PcBD777nvLqHXl96W4guPAmYwyXUFLkX5Hap-RusS18Bf3C6aByI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="font-headline text-lg font-bold">The Vance Mandate</p>
+<p class="text-sm opacity-80">Sustainability through continuity.</p>
+</div>
+</div>
+<!-- Stats/Brief Card -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-low p-8 rounded-[1.5rem] flex flex-col justify-between h-64">
+<span class="material-symbols-outlined text-primary text-4xl">history_edu</span>
+<div>
+<p class="font-headline text-4xl font-bold text-on-surface">100+</p>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-wider">Years of Data</p>
+</div>
+</div>
+<!-- Landscape Detail Card -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest p-8 rounded-[1.5rem] shadow-[0px_20px_40px_rgba(20,27,43,0.04)] grid md:grid-cols-2 gap-8 items-center">
+<img class="rounded-xl aspect-video object-cover" data-alt="wide angle shot of rolling green hills of a modern farm with neat rows of crops under a soft overcast sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzcItp8fOuYlr6fdgUGeavw8amzghwS4_E6oXefaFWT0b7vsmnT1r4I1Ueo9EBEMoH2QvJMYQaYv5mqz57FL5rcqotzPAeKOnpoXzm67XsbCx7s28uiQ4aAmeail3zjRHlGIvPMZTX2koztvgLIozz3_IfRDc0YEYJBQqIInDUBIX-AhY9M4jNnjKZrwpl2Oo3i_6dHwUf4uKpih9Sayy49A-XqQSkRl2dpFYNKc09pnmTKglJABFD-vgOexx2-fzcl7SFopGR9ccW"/>
+<div class="space-y-4">
+<h4 class="font-headline text-xl font-bold">Preserving Terroir</h4>
+<p class="text-on-surface-variant text-sm">We maintain the mineral profile of our 400-acre estate using regenerative practices that haven't changed since the second generation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Crops & Cultivation: Editorial Grid -->
+<section class="space-y-12" id="crops">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-xl">
+<h2 class="text-on-surface-variant font-label text-xs uppercase tracking-[0.2em] mb-4">The Harvest</h2>
+<h1 class="font-headline text-5xl font-extrabold tracking-tight text-on-surface">Heirloom Integrity</h1>
+</div>
+<div class="flex gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-xs font-medium uppercase tracking-widest">Organic Certified</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-xs font-medium uppercase tracking-widest">Heirloom Grade</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Crop Card 1 -->
+<div class="space-y-6">
+<div class="rounded-[1.5rem] overflow-hidden aspect-[4/5] relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="macro photograph of vibrant red heirloom tomatoes with water droplets and morning dew in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl4AvAuA_g7j2eFPGOSfDjaV6TmBwNaKMy9rVJVZ3fStzqvZuM4zstzra_wpV5_sKaVzAuEBZB7ooigdhEDIVIcjiY3EM94WWpemhPgjdIHfYC8HuVv8yINMCH3G0kEpphOKmUFy006m2tgWg5Ll7XaZXNCpz6R-P_uC7b5oiRYsUMLEODWDpAWiBxo5h_K6jHbBPU9fe2gNCPzqrrf6_M_rbNQmnCp59mJeK_I_fxlm0ZINEoPREqab4Nb7tzAqxg0uA2NbPfD88c"/>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-white text-[10px] font-bold uppercase tracking-widest">Vance Crimson</div>
+</div>
+<div class="px-2 space-y-4">
+<div class="flex justify-between items-baseline border-b border-outline-variant/15 pb-2">
+<h3 class="font-headline text-xl font-bold">High-Lumen Lycopene</h3>
+<span class="text-primary font-bold">#TC-01</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold tracking-tighter">Nutritional Density</p>
+<p class="font-headline text-lg font-bold text-on-surface">94%</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold tracking-tighter">Lumen Exposure</p>
+<p class="font-headline text-lg font-bold text-on-surface">12.4k</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Crop Card 2 -->
+<div class="space-y-6">
+<div class="rounded-[1.5rem] overflow-hidden aspect-[4/5] relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="vibrant purple kale leaves with intricate veins and cold frost edges against a dark soil background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8WY_L8YJN1lfXUI6GOPSUuCW6lS3SZ-g4nsO77f1ndukr-oa4uN2l_IoqF12N45AnQjWdC4a9j78PhVWn9vGP_I2eCBruP47uuCW62r9azVj1eFBpAKVcyI9vM9oKcHWvDjjNPm1zL-1JniZiHKHU6LDLgn4j28BTsjHeSs0S7QUMpEas5As2f-6acACcq3lbYC1IF_sAWkGCCiuhL1jxw6-78LSH1cUqmm7_jEiUoyCJVTwwdKk9Y5G8DL4hkp-Yubk9Gm2aifXG"/>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-white text-[10px] font-bold uppercase tracking-widest">Midnight Brassica</div>
+</div>
+<div class="px-2 space-y-4">
+<div class="flex justify-between items-baseline border-b border-outline-variant/15 pb-2">
+<h3 class="font-headline text-xl font-bold">Anthocyanin Focus</h3>
+<span class="text-primary font-bold">#MB-42</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold tracking-tighter">Mineral Retention</p>
+<p class="font-headline text-lg font-bold text-on-surface">88%</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold tracking-tighter">Soil PH</p>
+<p class="font-headline text-lg font-bold text-on-surface">6.4</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Crop Card 3 -->
+<div class="space-y-6">
+<div class="rounded-[1.5rem] overflow-hidden aspect-[4/5] relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close up of golden wheat stalks swaying in the wind with a bright sun flare and blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo2t76CDYVMlynslqD_iCkiNFNoTmgspqdGy7j0_CGHOsP4iAZ_P_c6UvC5tAigupMOOfXyn7qIIyqS3Zf8Fef74y2bwsXXWaax7VIJ2RPKxIBuOxBX0GRHdvUw1xIcme9B5oioHYTcZSeoGoW_1L1zTlh-fOxnj2xNWt81J-cvhQXRcN6k8TBhT9dUAsEvNKYaLsZtCnC69Tk5dHB0wowZiKvkGeOcKBFEIFi5ejL_uBtsibVbw11PEOme4uLGFVbOW7tr3NwijRH"/>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-white text-[10px] font-bold uppercase tracking-widest">Legacy Grain</div>
+</div>
+<div class="px-2 space-y-4">
+<div class="flex justify-between items-baseline border-b border-outline-variant/15 pb-2">
+<h3 class="font-headline text-xl font-bold">Starch Purity</h3>
+<span class="text-primary font-bold">#LG-99</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl">
+<div class="flex justify-between items-center">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold tracking-tighter">Yield Delta</p>
+<span class="material-symbols-outlined text-xs text-primary">trending_up</span>
+</div>
+<p class="font-headline text-lg font-bold text-on-surface">+12%</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold tracking-tighter">Moisture Index</p>
+<p class="font-headline text-lg font-bold text-on-surface">14.1</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technology & Precision: Minimalist Bento -->
+<section class="space-y-12 bg-slate-50 -mx-8 px-8 py-24 rounded-[3rem]" id="tech">
+<div class="max-w-2xl">
+<h2 class="text-on-surface-variant font-label text-xs uppercase tracking-[0.2em] mb-4">The Infrastructure</h2>
+<h1 class="font-headline text-5xl font-extrabold tracking-tight text-on-surface leading-tight">Algorithmic Harmony</h1>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Tech Card 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-[1.5rem] p-10 shadow-[0px_20px_40px_rgba(0,0,0,0.02)] border border-outline-variant/10 group">
+<div class="mb-8 p-3 bg-emerald-50 w-fit rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Kinetic Sensors</h3>
+<p class="text-on-surface-variant leading-relaxed">A distributed network of 1,200 micro-sensors tracking seismic root activity and transpiration rates in real-time.</p>
+</div>
+<!-- Tech Card 2 (Image Focus) -->
+<div class="md:col-span-2 relative rounded-[1.5rem] overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="minimalist overhead shot of a precision agricultural drone flying over a perfectly geometric field of crops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfifezvlcayzEg7070lKSgVsM2J-catCAs6aqOrEMbO8TKT1ftbpAgBFppPnVFzG5TMCxdMHdHTZvWnvM3QQ8uDevRh0FwT1rtCFXPrZm6kIVRrfrXyMbMNRo89BKKZb4cwLJ0pGJBtm1W_XLAkdv4ox1LSgK3NGPHVpD3xkABQQPXAh1QdptFS332kiv5mlFDMKVvHhtVj7RAf4RBAQd6sXHeUWdLqiWtKhLTC9o3fl4lN0Si1yAAlt5skAmwk9HN8oj8GmmDxbzR"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white font-headline font-bold text-xl tracking-widest border-2 border-white px-6 py-2 uppercase">Live Telemetry</span>
+</div>
+</div>
+<!-- Tech Card 3 -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] p-8 shadow-[0px_20px_40px_rgba(0,0,0,0.02)] border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4">monitoring</span>
+<h4 class="font-headline font-bold text-lg">Yield AI</h4>
+<p class="text-xs text-on-surface-variant mt-2">Predictive modeling for harvest optimization.</p>
+</div>
+<!-- Tech Card 4 -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] p-8 shadow-[0px_20px_40px_rgba(0,0,0,0.02)] border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4">water_drop</span>
+<h4 class="font-headline font-bold text-lg">Hydra-Flow</h4>
+<p class="text-xs text-on-surface-variant mt-2">Closed-loop nutrient delivery systems.</p>
+</div>
+<!-- Tech Card 5 -->
+<div class="md:col-span-2 bg-primary text-on-primary rounded-[1.5rem] p-8 flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<h4 class="font-headline text-3xl font-bold">99.8%</h4>
+<p class="text-sm font-label uppercase tracking-widest opacity-80">System Uptime</p>
+</div>
+<div class="mt-8 relative z-10">
+<p class="text-sm">Continuous monitoring ensuring that every plant receives its ideal micro-climate 24/7.</p>
+</div>
+<!-- Background decoration -->
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[10rem]" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Analytics & Yield: Growth Metrics -->
+<section class="space-y-12" id="analytics">
+<div class="text-center max-w-xl mx-auto">
+<h2 class="text-on-surface-variant font-label text-xs uppercase tracking-[0.2em] mb-4 text-center">Quantifiable Success</h2>
+<h1 class="font-headline text-5xl font-extrabold tracking-tight text-on-surface">Yield Intelligence</h1>
+</div>
+<!-- Signature Component: Growth Metric List (Horizontal Scroll) -->
+<div class="flex overflow-x-auto pb-8 gap-6 no-scrollbar snap-x">
+<!-- Metric 1 -->
+<div class="min-w-[320px] snap-center bg-surface-container-low rounded-2xl p-8 space-y-6">
+<div class="flex justify-between items-start">
+<h5 class="font-headline font-bold text-slate-500 uppercase text-xs tracking-widest">Efficiency Index</h5>
+<span class="text-primary font-bold text-sm">+4.2%</span>
+</div>
+<div class="h-16 w-full flex items-end gap-1">
+<div class="bg-primary/20 w-full h-[40%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[60%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[55%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[75%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[65%] rounded-t-sm"></div>
+<div class="bg-primary w-full h-[90%] rounded-t-sm"></div>
+</div>
+<div>
+<p class="font-headline text-4xl font-extrabold">0.92</p>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">LITERS PER CALORIE</p>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="min-w-[320px] snap-center bg-surface-container-low rounded-2xl p-8 space-y-6">
+<div class="flex justify-between items-start">
+<h5 class="font-headline font-bold text-slate-500 uppercase text-xs tracking-widest">Soil Vitality</h5>
+<span class="text-primary font-bold text-sm">Optimal</span>
+</div>
+<div class="h-16 w-full flex items-end gap-1">
+<div class="bg-primary/20 w-full h-[80%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[82%] rounded-t-sm"></div>
+<div class="bg-primary w-full h-[85%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[83%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[86%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[84%] rounded-t-sm"></div>
+</div>
+<div>
+<p class="font-headline text-4xl font-extrabold">8.4/10</p>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">CARBON SEQUESTRATION SCALE</p>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="min-w-[320px] snap-center bg-surface-container-low rounded-2xl p-8 space-y-6">
+<div class="flex justify-between items-start">
+<h5 class="font-headline font-bold text-slate-500 uppercase text-xs tracking-widest">Yield Accuracy</h5>
+<span class="text-primary font-bold text-sm">Stable</span>
+</div>
+<div class="h-16 w-full flex items-end gap-1">
+<div class="bg-primary w-full h-[98%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[97%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[98%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[98%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[99%] rounded-t-sm"></div>
+<div class="bg-primary/20 w-full h-[98%] rounded-t-sm"></div>
+</div>
+<div>
+<p class="font-headline text-4xl font-extrabold">98.4%</p>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">HARVEST PREDICTION DELTA</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t-0 w-full py-24">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="space-y-4 text-center md:text-left">
+<div class="font-headline font-bold text-emerald-900 text-2xl tracking-tighter">Verdant Legacy</div>
+<p class="font-inter text-xs uppercase tracking-widest text-slate-400">© 2024 Verdant Legacy. Precision cultivated.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-emerald-500 transition-colors" href="#">Sustainability Report</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-emerald-500 transition-colors" href="#">Terms of Origin</a>
+<a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-emerald-500 transition-colors" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+<!-- Responsive Mobile Nav (Hidden on desktop) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 glass-header flex justify-around items-center h-16 z-50 rounded-t-3xl shadow-2xl">
+<button class="material-symbols-outlined text-emerald-600" style="font-variation-settings: 'FILL' 1;">history_edu</button>
+<button class="material-symbols-outlined text-slate-400">potted_plant</button>
+<button class="material-symbols-outlined text-slate-400">precision_manufacturing</button>
+<button class="material-symbols-outlined text-slate-400">monitoring</button>
+</div>
+</body></html>
