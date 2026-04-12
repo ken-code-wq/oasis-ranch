@@ -23,7 +23,7 @@ function TopBar() {
     <header className={`topbar ${isHero ? 'is-hero' : 'is-scrolled'}`}>
       <div className="container topbar-inner reveal">
         <a href="#home" className="brand" aria-label="Go to top of page">
-          <span className="brand-mark" aria-hidden="true"></span>
+          <img src="/oasis_ranch_logo.png" alt="Oasis Ranch Logo" className="brand-logo" width="32" height="32" />
           Oasis Ranch
         </a>
 

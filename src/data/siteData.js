@@ -55,11 +55,11 @@ export const profileSections = {
 export const profileVisuals = {
   mission: {
     primaryImage:
-      'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    primaryAlt: 'Hands reviewing project plans and technical drawings on a desk',
+      'https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    primaryAlt: 'Farmer working in a lush green agricultural field',
     secondaryImage:
-      'https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    secondaryAlt: 'Team members reviewing plans together at an active site',
+      'https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    secondaryAlt: 'Abundant harvest of fresh organic vegetables',
     points: [
       'Deliver halal wholesome produce with consistent quality and care.',
       'Build trusted relationships through ethical service.',
@@ -69,11 +69,11 @@ export const profileVisuals = {
   },
   vision: {
     primaryImage:
-      'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    primaryAlt: 'Surveying and planning team with precision field equipment',
+      'https://images.pexels.com/photos/422202/pexels-photo-422202.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    primaryAlt: 'Flock of sheep grazing peacefully in a meadow',
     secondaryImage:
-      'https://images.pexels.com/photos/8292797/pexels-photo-8292797.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    secondaryAlt: 'Professionals discussing project strategy with digital tools',
+      'https://images.pexels.com/photos/2886937/pexels-photo-2886937.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    secondaryAlt: 'Modern greenhouse technology for efficient crop and animal farming',
     points: [
       'Become the leading halal meat processor and supplier in our segments.',
       'Scale with efficient technology and distribution channels.',
@@ -93,45 +93,45 @@ export const profileVisuals = {
 
 export const galleryItems = [
   {
-    title: 'Morning Field Geometry',
+    title: 'Poultry Operations',
     image:
-      'https://images.pexels.com/photos/1567069/pexels-photo-1567069.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    alt: 'Neat planted rows under soft sunrise light',
+      '/gallery_images/WhatsApp%20Image%202026-04-10%20at%2018.36.57%20(1).jpeg',
+    alt: 'Large flock of healthy chickens inside a well-ventilated poultry coop feeding',
     layout: 'gallery-large',
     delayClass: 'delay-1',
   },
   {
-    title: 'Harvest Bench',
+    title: 'Livestock Feeding',
     image:
-      'https://images.pexels.com/photos/7728710/pexels-photo-7728710.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    alt: 'Fresh harvested vegetables arranged in crates',
+      '/gallery_images/WhatsApp%20Image%202026-04-10%20at%2018.36.57%20(2).jpeg',
+    alt: 'Rams and sheep feeding together from wooden troughs',
     layout: 'gallery-tall',
     delayClass: 'delay-2',
   },
   {
-    title: 'Root-Zone Monitoring',
+    title: 'Goat Herding',
     image:
-      'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=1000',
-    alt: 'Farmer checking irrigation and root moisture with digital tools',
+      '/gallery_images/WhatsApp%20Image%202026-04-10%20at%2018.36.57%20(4).jpeg',
+    alt: 'Healthy goats kept inside a secure wooden pen enclosure',
     layout: 'gallery-mid',
     delayClass: 'delay-2',
   },
   {
-    title: 'Greenhouse Cycle',
+    title: 'Cattle Grazing',
     image:
-      'https://images.pexels.com/photos/2886937/pexels-photo-2886937.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    alt: 'Protected greenhouse lanes with healthy crop growth',
+      '/gallery_images/WhatsApp%20Image%202026-04-10%20at%2018.36.57.jpeg',
+    alt: 'Herd of cattle grazing freely in an open green pasture',
     layout: 'gallery-wide',
     delayClass: 'delay-3',
   },
-  // {
-  //   title: 'Bio-Active Compost',
-  //   image:
-  //     'https://images.pexels.com/photos/12139613/pexels-photo-12139613.jpeg?auto=compress&cs=tinysrgb&w=1000',
-  //   alt: 'Organic compost and soil amendment process for sustainable cultivation',
-  //   layout: 'gallery-small',
-  //   delayClass: 'delay-3',
-  // },
+  {
+    title: 'Sheep Pasture',
+    image:
+      '/gallery_images/WhatsApp%20Image%202026-04-10%20at%2018.36.58.jpeg',
+    alt: 'Sheep grazing naturally in tall green field grass',
+    layout: 'gallery-full',
+    delayClass: 'delay-3',
+  },
 ]
 
 export const contactContent = {

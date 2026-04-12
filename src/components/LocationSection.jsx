@@ -3,7 +3,7 @@ import { contactContent } from '../data/siteData'
 function LocationSection() {
   const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
     contactContent.location.decimal
-  )}&output=embed`
+  )}&t=k&output=embed`
 
   return (
     <section id="location" className="section bg-[var(--bg)]">
@@ -19,7 +19,7 @@ function LocationSection() {
                 href={contactContent.location.mapUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="text-[var(--accent)] hover:text-[#11c95f] mt-4 underline underline-offset-4 decoration-[var(--border)] hover:decoration-[#11c95f] transition-all"
+                className="inline-block w-fit mt-4 text-[var(--accent)] border-b-2 border-transparent hover:text-[#11c95f] hover:border-[var(--accent)] transition-all pb-0"
               >
                 Open In Google Maps
               </a>

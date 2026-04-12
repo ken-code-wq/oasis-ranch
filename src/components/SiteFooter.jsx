@@ -5,7 +5,10 @@ function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <p className="footer-brand">Oasis Ranch</p>
+          <div className="footer-brand" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            <img src="/oasis_ranch_logo.png" alt="Oasis Ranch Logo" width="24" height="24" />
+            Oasis Ranch
+          </div>
           <p className="footer-note">© {year} Oasis Ranch. Precision grown with purpose.</p>
         </div>
 

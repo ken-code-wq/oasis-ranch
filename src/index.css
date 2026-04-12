@@ -30,6 +30,10 @@ body,
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -200,9 +204,9 @@ textarea:focus-visible {
 }
 
 .topbar.is-scrolled .nav-btn {
-  background: linear-gradient(135deg, #11c95f, #0cae50);
+  background: linear-gradient(135deg, #037b35, #0cae50);
   color: #f5fff8;
-  box-shadow: 0 10px 24px rgba(16, 185, 82, 0.34);
+  /* box-shadow: 0 10px 24px rgba(16, 185, 82, 0.34); */
 }
 
 .topbar.is-scrolled .nav-btn:hover {
@@ -470,6 +474,11 @@ textarea:focus-visible {
 .gallery-small {
   grid-column: span 4;
   grid-row: span 3;
+}
+
+.gallery-full {
+  grid-column: span 12;
+  grid-row: span 4;
 }
 
 .section-intent {
@@ -874,19 +883,25 @@ textarea:focus-visible {
 
 .reveal {
   opacity: 0;
-  animation: revealUp 560ms ease forwards;
+  transform: translateY(14px);
+  transition: opacity 560ms ease, transform 560ms ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .delay-1 {
-  animation-delay: 110ms;
+  transition-delay: 110ms;
 }
 
 .delay-2 {
-  animation-delay: 190ms;
+  transition-delay: 190ms;
 }
 
 .delay-3 {
-  animation-delay: 270ms;
+  transition-delay: 270ms;
 }
 
 @media (max-width: 64rem) {
@@ -959,7 +974,8 @@ textarea:focus-visible {
   .gallery-tall,
   .gallery-mid,
   .gallery-wide,
-  .gallery-small {
+  .gallery-small,
+  .gallery-full {
     grid-column: span 1;
     grid-row: span 1;
   }
