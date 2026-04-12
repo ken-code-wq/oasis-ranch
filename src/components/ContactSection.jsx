@@ -3,10 +3,33 @@ import { contactContent } from '../data/siteData'
 
 function ContactSection() {
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    setSent(true)
+    setLoading(true)
+
+    const formData = new FormData(event.target)
+    // Replace this with your own Web3Forms access key (get it from https://web3forms.com/)
+    formData.append("access_key", "acb5eea2-4d3d-43e5-aa5d-c027097a0ced")
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      })
+      
+      if (response.ok) {
+        setSent(true)
+        event.target.reset()
+      } else {
+        console.error("Form submission failed")
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -54,7 +77,7 @@ function ContactSection() {
               <input 
                 type="text" 
                 name="name" 
-                placeholder="Jane Smith" 
+                placeholder="Kwame Mensah" 
                 required
                 className="input-control border-b-2 border-l-0 border-r-0 border-t-0 border-[#e8e6df] rounded-none px-0 py-3 bg-transparent placeholder:text-gray-400 focus:border-[var(--accent)] focus:ring-0 shadow-none"
               />
@@ -65,7 +88,7 @@ function ContactSection() {
               <input 
                 type="email" 
                 name="email" 
-                placeholder="testing@gmail.com" 
+                placeholder="kwame.mensah@gmail.com" 
                 required
                 className="input-control border-b-2 border-l-0 border-r-0 border-t-0 border-[#e8e6df] rounded-none px-0 py-3 bg-transparent placeholder:text-gray-400 focus:border-[var(--accent)] focus:ring-0 shadow-none"
               />
@@ -76,7 +99,7 @@ function ContactSection() {
               <textarea 
                 name="message" 
                 rows="5" 
-                placeholder="Tell us about your business..." 
+                placeholder="Tell us about your organic produce needs..." 
                 required
                 className="input-control border-b-2 border-l-0 border-r-0 border-t-0 border-[#e8e6df] rounded-none px-0 py-3 bg-transparent placeholder:text-gray-400 focus:border-[var(--accent)] focus:ring-0 shadow-none"
               ></textarea>
@@ -84,10 +107,11 @@ function ContactSection() {
 
             <div className="form-actions mt-4">
               <button 
-                type="submit" 
-                className="button-primary w-full justify-center py-4 text-base rounded-full bg-[var(--ink)] text-[var(--card)] hover:bg-[var(--accent)] transition-colors"
+                type="submit"
+                disabled={loading || sent}
+                className="button-primary w-full justify-center py-4 text-base rounded-full bg-[var(--ink)] text-[var(--card)] hover:bg-[var(--accent)] transition-colors disabled:opacity-50"
               >
-                {sent ? 'Submitted Successfully' : 'Send Inquiry'}
+                {loading ? 'Sending...' : sent ? 'Inquiry Sent' : 'Send Inquiry'}
               </button>
             </div>
             {sent && (

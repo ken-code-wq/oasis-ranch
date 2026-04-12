@@ -29,9 +29,9 @@ export const storyContent = {
   body:
     'Oasis Ranch (formally Sibdoo Farms) was registered on April 25, 2021 under the Registration of Business Names Act, 1962 (No.151). Its principal business activity is crop, plants and animal farming. The entire operations and production value chain complies with the highest standard of ethics.',
   image:
-    'https://images.pexels.com/photos/7728088/pexels-photo-7728088.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    'https://images.pexels.com/photos/1112080/pexels-photo-1112080.jpeg?auto=compress&cs=tinysrgb&w=1200',
   imageAlt:
-    'Hands holding fertile soil with young plants in an organic farm setting',
+    'Golden hour sunlight shining over a tranquil and flourishing agricultural field',
 }
 
 export const profileSections = {
