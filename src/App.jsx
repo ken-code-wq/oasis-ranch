@@ -10,6 +10,7 @@ import ContactSection from './components/ContactSection'
 import LocationSection from './components/LocationSection'
 import SiteFooter from './components/SiteFooter'
 import MobileDock from './components/MobileDock'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   useEffect(() => {
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <div className="site-shell">
+      <SpeedInsights/>
       <TopBar />
       <main>
         <HeroSection />
