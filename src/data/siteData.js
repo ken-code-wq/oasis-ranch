@@ -141,6 +141,7 @@ export const contactContent = {
     mapUrl: 'https://www.google.com/maps?q=5.8563480,-0.2830230',
   },
   email: 'oasisranch5@gmail.com',
+  phone: '0243180287',
 }
 
 export const dockItems = [
